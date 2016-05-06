@@ -1,0 +1,85 @@
+@import "reset.scss";
+@import "initialization.scss";
+
+.hp-wrapper {
+	background-color: #f1f0ec;
+}
+
+.hp-form {
+	padding: 2.5%;
+	background-color: #e5e4e0;
+	form {
+		border: 1px solid #b2b1af;
+		@extend %radiu;
+	}
+	input {
+		height: 46px;
+		@extend %font-fourteen;
+	}
+	input[type='text'] {
+		width: 63%;
+		padding-left: 10%;
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+	}
+	input[type='submit'] {
+		width: 27%;
+		margin-left: -5px;
+		border-left: 1px solid #d1d0cc;
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+		@include normalGradient(linear, top, #fcfcfc, #e5e5e5);
+	}
+}
+.hp-link {
+	padding: 2.5%;
+	background-color: #fff;
+	li {
+		width: 48.5%;
+		height: 44px;
+		line-height: 44px;
+		@extend %float-left;
+		@extend %text-align;
+		@extend %font-fourteen;
+	}
+	a {
+		color: #fff;
+		@extend %a-block;
+	}
+	.hp-buy-car {
+		background-color: #f9723a;
+		@extend %radiu;
+	}
+	.hp-car-assess {
+		margin-left: 3%;
+		background-color: #f6a424;
+		@extend %radiu;
+	}
+}
+#expertProfessionalAnswers {
+	padding: 2.5%;
+}
+.expert-professional-answers {
+	background-color: #fff;
+	@extend %radiu;
+	.text {
+		line-height: 33px;
+		color: #333;
+		@extend %text-align;
+		@extend %font-thirty;
+	}
+	.link {
+		width: 57%;
+		height: 44px;
+		line-height: 44px;
+		margin: 0 auto;
+		background-color: #0188cc;
+		@extend %text-align;
+		@extend %font-sixteen;
+		@extend %radiu;
+	}
+	a {
+		color: #fff;
+		@extend %a-block;
+	}
+}
